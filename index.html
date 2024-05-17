@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share with #cagyamaha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #0000FF; /* Background color: blue */
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .step {
+            margin-bottom: 20px;
+        }
+        .step h2 {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .step p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .copy-text {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .copy-text:hover {
+            background-color: #d0d0d0;
+        }
+        .instructions {
+            margin-bottom: 20px;
+        }
+        .follow-link {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .follow-link:hover {
+            text-decoration: underline;
+        }
+        .click-here {
+            display: flex;
+            align-items: center;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .arrow {
+            margin-left: 5px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Share Your Post with #cagyamaha</h1>
+        <div class="instructions">
+            <p>Follow these simple steps to share your post on Instagram using the hashtag #cagyamaha:</p>
+        </div>
+        <div class="step">
+            <h2>Step 1:</h2>
+            <div class="click-here">
+                <p>Click here</p>
+                <div class="arrow">⬇️</div><p>to copy the hashtag and testimonial:</p>
+            </div>
+            <div class="copy-text" onclick="copyToClipboard()">Amazing experience at the Cag Yamaha Mileage Challenge event in Coimbatore, Saravanapatti! Tried out the Yamaha Fascino and RayZR – these scooters have the best mileage! Check them out! 🚴‍♂️✨ #cagyamaha #YamahaFascino #RayZR #MileageChallenge</div>
+        </div>
+        <div class="step">
+            <h2>Step 2:</h2>
+            <p>Open the Instagram app on your mobile device.</p>
+        </div>
+        <div class="step">
+            <h2>Step 3:</h2>
+            <p>Tap the '+' icon at the bottom center to create a new post.</p>
+        </div>
+        <div class="step">
+            <h2>Step 4:</h2>
+            <p>Select the photo or video you want to share from your gallery.</p>
+        </div>
+        <div class="step">
+            <h2>Step 5:</h2>
+            <p>In the caption section, paste the copied text and add any additional hashtags or mentions.</p>
+        </div>
+        <div class="step">
+            <h2>Step 6:</h2>
+            <p>Tap 'Share' to post on Instagram.</p>
+        </div
+
+        <div class="follow">
+            <p>Don't forget to <a href="https://www.instagram.com/yourprofile" class="follow-link" target="_blank">follow us on Instagram</a> for more updates and examples!</p>
+        </div>
+    </div>
+    <script>
+        function copyToClipboard() {
+            const text = "Amazing experience at the Cag Yamaha Mileage Challenge event in Coimbatore, Saravanapatti! Tried out the Yamaha Fascino and RayZR – these scooters have the best mileage! Check them out! 🚴‍♂️✨ #cagyamaha #YamahaFascino #RayZR #MileageChallenge";
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Text copied to clipboard');
+            }, function(err) {
+                alert('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
